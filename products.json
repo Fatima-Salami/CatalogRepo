@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Blue Notebook",
+      "category": "Stationery",
+      "price": 9.99,
+      "rating": 4.5,
+      "description": "A5 notebook"
+    },
+    {
+      "id": 2,
+      "name": "Ink Pen",
+      "category": "Stationery",
+      "price": 2.5,
+      "rating": 4.0,
+      "description": "Smooth gel pen"
+    },
+    {
+      "id": 3,
+      "name": "Desk Lamp",
+      "category": "Home",
+      "price": 29.99,
+      "rating": 4.7,
+      "description": "LED desk lamp"
+    }
+  ]
+}
