@@ -1,29 +1,16 @@
 import  { useEffect, useState } from 'react';
-import api from '../services/api';
+import { useRequests } from '../providers/RequestsContext';
 
-export default function ProductList() {
+export default function ProductList() { //we can create hook to fetch products and use it in other components if needed then
   const [products, setProducts] = useState([]);
-  const [loading, setLoading]   = useState(true);
-  const [error, setError]       = useState(null);
+  const { api } = useRequests();
 
   useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      try {
-        const res = await api.get('/products');
-        if (!cancelled) setProducts(res.data);
-      } catch (err) {
-        if (!cancelled) setError(err.message || 'Failed to load');
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-    load();
-    return () => { cancelled = true; };
+    ;(async function () {
+        const res = await api('/products')
+        setProducts(res?.data);
+    })()
   }, []);
-
-  if (loading) return <div>Loading products…</div>;
-  if (error) return <div style={{color: 'red'}}>Error: {error}</div>;
 
   return (
     <ul>
