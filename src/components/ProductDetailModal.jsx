@@ -34,24 +34,5 @@ const styleBox = {
         <Button onClick={onClose} variant="contained">Close</Button>
       </DialogActions>
 </Dialog>
-
-   /*  <div role="dialog" aria-modal="true" style={styleBackdrop}>
-      <div style={styleBox}>
-        <h2>{product.name}</h2>
-        <p>
-          <strong>Category:</strong> {product.category}
-        </p>
-        <p>
-          <strong>Price:</strong> ${product.price}
-        </p>
-        <p>
-          <strong>Rating:</strong> {product.rating}
-        </p>
-        <p>{product.description}</p>
-        <div style={{ textAlign: "right" }}>
-          <button onClick={onClose}>Close</button>
-        </div>
-      </div>
-    </div> */
   );
 }
