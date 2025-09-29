@@ -23,6 +23,30 @@
       "price": 29.99,
       "rating": 4.7,
       "description": "LED desk lamp"
+    },
+    {
+      "id": 4,
+      "name": "Glitter Highlighter",
+      "category": "Stationery",
+      "price": 3,
+      "rating": 5,
+      "description": "Purple Glitter Highlighter"
+    },
+    {
+      "id": 5,
+      "name": "File",
+      "category": "Stationery",
+      "price": 7,
+      "rating": 6,
+      "description": "File of A4 papers"
+    },
+    {
+      "id": 6,
+      "name": "Radio",
+      "category": "Office",
+      "price": 35,
+      "rating": 9,
+      "description": "Vintage Radio with speaker"
     }
   ]
 }
