@@ -3,7 +3,6 @@ import  { createContext, useState, useContext } from 'react'
 import { Box, CircularProgress } from '@mui/material'
 import { useError } from './ErrorContext'
 
-// Simple overlay
 function LoadingOverlay() {
  return (
     <Box

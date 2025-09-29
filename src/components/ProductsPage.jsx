@@ -52,10 +52,10 @@ export default function ProductsPage() {
   ];
 
   return (
-    <Grid container p={3} width={"100%"}>
+    <Grid container width="100%" spacing={2}>
       <Grid item xs={12}>
-        <Typography variant="h4" gutterBottom>
-          Products
+        <Typography variant="h3" gutterBottom fontWeight="bold">
+          Products Catalog
         </Typography>
         <Grid container spacing={2} mb={3}>
           <Grid item>
@@ -80,8 +80,7 @@ export default function ProductsPage() {
           </Grid>
         </Grid>
 
-        <Grid container >
-          <Grid item xs={12}>
+        <Grid item xs={12}>
             <DataGrid
               rows={filtered}
               columns={columns}
@@ -90,13 +89,26 @@ export default function ProductsPage() {
                 pagination: { paginationModel: { pageSize: 5, page: 0 } },
               }}
               onRowClick={(params) => setSelectedProduct(params.row)}
-              disableRowSelectionOnClick
+              disableRowSelectionOnClick={false}
               getRowId={(row) => row.id}
               pagination
               hideFooterSelectedRowCount
-              sx={{ height: 320, width: "100%", minWidth: 1000 }}
+              sx={{
+                width: "100%",
+                minWidth: 700,
+                height: 400,
+                borderRadius: 2,
+                boxShadow: 1,
+                "& .MuiDataGrid-columnHeaders": { bgcolor: "background.paper" },
+                "& .MuiDataGrid-row": { cursor: "pointer" },
+                "& .MuiDataGrid-row:hover": { bgcolor: "action.hover" },
+                "& .Mui-selected": { bgcolor: "primary.light !important" },
+                "& .MuiDataGrid-cell:focus, & .MuiDataGrid-cell:focus-within": {
+                  outline: "none",
+                  border: "none",
+                },
+              }}
             />
-          </Grid>
         </Grid>
 
         <ProductDetailModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
