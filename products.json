@@ -1,52 +1,140 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Blue Notebook",
-      "category": "Stationery",
-      "price": 9.99,
-      "rating": 4.5,
-      "description": "A5 notebook"
-    },
-    {
-      "id": 2,
-      "name": "Ink Pen",
-      "category": "Stationery",
-      "price": 2.5,
-      "rating": 4.0,
-      "description": "Smooth gel pen"
-    },
-    {
-      "id": 3,
-      "name": "Desk Lamp",
-      "category": "Home",
-      "price": 29.99,
-      "rating": 4.7,
-      "description": "LED desk lamp"
-    },
-    {
-      "id": 4,
-      "name": "Glitter Highlighter",
-      "category": "Stationery",
-      "price": 3,
-      "rating": 5,
-      "description": "Purple Glitter Highlighter"
-    },
-    {
-      "id": 5,
-      "name": "File",
-      "category": "Stationery",
-      "price": 7,
-      "rating": 6,
-      "description": "File of A4 papers"
-    },
-    {
-      "id": 6,
-      "name": "Radio",
-      "category": "Office",
-      "price": 35,
-      "rating": 9,
-      "description": "Vintage Radio with speaker"
-    }
-  ]
+  "products": 
+    [
+      {
+        "id": 1,
+        "name": "Modern Desk Chair",
+        "category": "Furniture",
+        "price": 99.99,
+        "rating": 4.5,
+        "description": "A comfortable, ergonomic chair for your workspace with adjustable height and sleek design.",
+        "imageUrl": "https://example.com/images/desk-chair.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Wooden Coffee Table",
+        "category": "Furniture",
+        "price": 149.00,
+        "rating": 4.2,
+        "description": "Minimalistic coffee table crafted from solid wood with a natural finish.",
+        "imageUrl": "https://example.com/images/coffee-table.jpg"
+      },
+      {
+        "id": 3,
+        "name": "LED Desk Lamp",
+        "category": "Accessories",
+        "price": 35.50,
+        "rating": 4.8,
+        "description": "Energy-efficient LED desk lamp with adjustable brightness and angle.",
+        "imageUrl": "https://example.com/images/desk-lamp.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Wireless Keyboard",
+        "category": "Electronics",
+        "price": 45.00,
+        "rating": 4.4,
+        "description": "Compact wireless keyboard with Bluetooth connectivity and long battery life.",
+        "imageUrl": "https://example.com/images/wireless-keyboard.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Noise-Cancelling Headphones",
+        "category": "Electronics",
+        "price": 199.99,
+        "rating": 4.6,
+        "description": "Over-ear headphones with active noise cancellation and superior sound quality.",
+        "imageUrl": "https://example.com/images/headphones.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Smartphone Stand",
+        "category": "Accessories",
+        "price": 12.99,
+        "rating": 4.0,
+        "description": "Adjustable smartphone stand suitable for desks and nightstands.",
+        "imageUrl": "https://example.com/images/phone-stand.jpg"
+      },
+      {
+        "id": 7,
+        "name": "USB-C Hub",
+        "category": "Electronics",
+        "price": 29.99,
+        "rating": 4.3,
+        "description": "Multiport USB-C hub with HDMI, USB 3.0, and SD card reader.",
+        "imageUrl": "https://example.com/images/usb-hub.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Office Plant",
+        "category": "Decor",
+        "price": 24.50,
+        "rating": 4.7,
+        "description": "Artificial succulent plant that adds greenery to any workspace.",
+        "imageUrl": "https://example.com/images/office-plant.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Laptop Stand",
+        "category": "Accessories",
+        "price": 30.00,
+        "rating": 4.1,
+        "description": "Portable laptop stand with adjustable height and angle for better ergonomics.",
+        "imageUrl": "https://example.com/images/laptop-stand.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Desk Organizer",
+        "category": "Decor",
+        "price": 18.99,
+        "rating": 4.4,
+        "description": "Multi-compartment desk organizer to keep your workspace tidy.",
+        "imageUrl": "https://example.com/images/desk-organizer.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Gaming Mouse",
+        "category": "Electronics",
+        "price": 59.99,
+        "rating": 4.5,
+        "description": "High-performance gaming mouse with customizable buttons and RGB lighting.",
+        "imageUrl": "https://example.com/images/gaming-mouse.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Standing Desk",
+        "category": "Furniture",
+        "price": 299.99,
+        "rating": 4.5,
+        "description": "Height-adjustable standing desk for healthier work posture.",
+        "imageUrl": "https://example.com/images/standing-desk.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Graphic Tablet",
+        "category": "Electronics",
+        "price": 79.99,
+        "rating": 4.6,
+        "description": "Digital drawing tablet suitable for creative professionals and hobbyists.",
+        "imageUrl": "https://example.com/images/graphic-tablet.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Desktop Monitor",
+        "category": "Electronics",
+        "price": 179.99,
+        "rating": 4.3,
+        "description": "24-inch full HD monitor with adjustable stand and wide viewing angles.",
+        "imageUrl": "https://example.com/images/monitor.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Pen Holder",
+        "category": "Decor",
+        "price": 8.49,
+        "rating": 3.9,
+        "description": "Metal mesh pen holder to store pens, pencils, and other small items.",
+        "imageUrl": "https://example.com/images/pen-holder.jpg"
+      }
+    ]
 }

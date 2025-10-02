@@ -4,19 +4,14 @@ import ComboBox from "./Inputs/ComboBox";
 import { DataGrid } from "@mui/x-data-grid";
 import ProductDetailModal from "./ProductDetailModal";
 
-import {
-  Box,
-  Typography,
-  TextField, Grid
-} from "@mui/material";
+import { Box, Typography, TextField, Grid } from "@mui/material";
 
 export default function ProductsPage() {
-  //we can create hook to fetch products and use it in other components if needed then
   const [products, setProducts] = useState([]);
   const { api } = useRequests();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     (async function () {
@@ -52,18 +47,19 @@ export default function ProductsPage() {
   ];
 
   return (
-    <Grid container width="100%" spacing={2}>
+    <Grid container width="100%" spacing={2} justifyContent="center">
       <Grid item xs={12}>
-        <Typography variant="h3" gutterBottom fontWeight="bold">
+        <Typography variant="h3" gutterBottom fontWeight="bold" align="center">
           Products Catalog
         </Typography>
-        <Grid container spacing={2} mb={3}>
+        <Grid container spacing={2} mb={3} justifyContent="center">
           <Grid item>
             <TextField
               label="Search"
               variant="outlined"
               size="small"
               onChange={(e) => setSearchTerm(e.target.value)}
+              autoComplete="off"
             />
           </Grid>
           <Grid item>
@@ -80,7 +76,9 @@ export default function ProductsPage() {
           </Grid>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} display="flex" justifyContent="center">
+          <Box sx={{ width: '100%', overflowX: 'auto' }}>
+          <Box sx={{ minWidth: 700, maxWidth: 1200, mx: 'auto' }}>
             <DataGrid
               rows={filtered}
               columns={columns}
@@ -95,7 +93,7 @@ export default function ProductsPage() {
               hideFooterSelectedRowCount
               sx={{
                 width: "100%",
-                minWidth: 700,
+                minWidth: 0,
                 height: 400,
                 borderRadius: 2,
                 boxShadow: 1,
@@ -108,10 +106,18 @@ export default function ProductsPage() {
                   border: "none",
                 },
               }}
+              componentsProps={{
+                panel: { style: { width: "100%" } },
+              }}
             />
+          </Box>
+          </Box>
         </Grid>
 
-        <ProductDetailModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
+        <ProductDetailModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
       </Grid>
     </Grid>
   );

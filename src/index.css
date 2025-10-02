@@ -6,7 +6,12 @@
   --bg: #F4F7FB;
   --text: #102A43;
 }
-
+body, #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
 body {
@@ -59,3 +64,8 @@ input, textarea, select {
   }
   body { background: #071028; color: var(--text); }
 }
+
+html, body {
+  overflow-x: hidden;
+}
+.MuiDataGrid-root { max-width: 100%; box-sizing: border-box; }

@@ -7,19 +7,42 @@ const theme = createTheme({
     background: { default: '#F4F7FB', paper: '#FFFFFF' },
     text: { primary: '#102A43', secondary: '#6B7280' }
   },
-  shape: { borderRadius: 10 },
+  shape: { borderRadius: 12 },
+  typography: {
+    fontFamily: 'system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    h5: { fontWeight: 700 },
+    h3: { fontWeight: 700 },
+  },
   components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          minHeight: '74vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingTop: '32px',
+          paddingBottom: '32px',
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: { textTransform: 'none', fontWeight: 600 },
         containedPrimary: { boxShadow: '0 8px 18px rgba(11,61,145,0.06)' }
       }
     },
-    MuiPaper: { styleOverrides: { root: { borderRadius: 12 } } }
-  },
-  typography: {
-    fontFamily: 'system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    h4: { fontWeight: 700 }
+    MuiPaper: { styleOverrides: { root: { borderRadius: 12 } } },
+    /* MuiTextField: { defaultProps: { size: 'small', fullWidth: true } },
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          width: '100%',
+          borderRadius: 8,
+          boxShadow: '0 6px 18px rgba(16, 42, 67, 0.08)',
+        },
+      },
+    } */
   }
 });
 

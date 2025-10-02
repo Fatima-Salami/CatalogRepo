@@ -1,7 +1,6 @@
-//import Window from './Window'
 import { Box, Button,Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material'
 
-const PageError = ({ onClose, message }) => {
+const PageError = ({ onClose, message, header = 'Error' }) => {
   const errorMessage =
     typeof message === 'string'
       ? message
@@ -15,7 +14,7 @@ const PageError = ({ onClose, message }) => {
 
   return (
     <Dialog open={Boolean(open)} onClose={onClose} maxWidth="sm" fullWidth>
-        <DialogTitle>Error</DialogTitle>
+        <DialogTitle>{header}</DialogTitle>
       <DialogContent>
         <Box
           sx={{
